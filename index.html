@@ -1,44 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Welcome to my blog</title>
-    </head>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" type="text/css" href="index copy.css">
+ <title>My Blog</title>
+ <title>My Blog</title>
+</head>
+<body>
+   <header class="header-top">
+       <h1 class="header-top__heading">Welcome to My Blog</h1>
+       <nav class="header-top__nav">
+           <ul class="nav__items">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Categories</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+       </nav>
+   </header>
 
-    <body>
-        <nav>
-            <h1>Welcome to my blog</h1>
-            <ul>
-                <div><button href="#">Home</button></div>
-                <div><button href="#">Categories</button></div>
-                <div><button href="#">About</button></div>
-                <div><button href="#">Contact</button></div>
-            </ul>
+<div class="wrapper">
+<main>
+<div class="posts-container">
+   <article class="post">
+   <h2>Post Title 1</h2>
+   <p class="post__published">
+   Published on
+   <time datetime="2023-09-12">September 12, 2023</time> by John Doe
+   </p>
+   <p>This is the content of the blog post...</p>
+   <p>More content goes here...</p>
+   </article>
 
-        </nav>
-        <section>
-            <section>
-                <h2>Post Title 1</h2>
-                <div>Published on September 12, 2023 by John Doe</div>
-                <div>This is the content of the blog post...</div>
-                <div>More content goes here...</div>
-                <h2>Post Title 2</h2>
-                <div>Published on September 10, 2023 by Jane Smith</div>
-                <div>This is the another blog post...</div>
-                <div>More content goes here...</div>
-            </section>
-            <section>
-             <h2>Recent Posts</h2>
-             <div>Post title 1</div>
-             <div>Post title 2</div>
-             <div>Post title 3</div>
-             <h2>Categories</h2>
-             <div>Category 1</div>
-             <div>Category 2</div>
-             <div>Category 3</div>    
-            </section>
-        </section>
-        <div>@2023 My Blog. All right reserves</div>
-        
+   <article class="post">
+   <h2>Post Title 2</h2>
+   <p class="post__published">
+   Published on
+   <time datetime="2023-09-10">September 10, 2023</time> by Jane Smith
+   </p>
+   <p>This is another blog post...</p>
+   <p>More content goes here...</p>
+   </article>
+   
+   <article class="post">
+   <h2>Post Title 3</h2>
+   <p class="post__published">
+   Published on
+   <time datetime="2023-09-10">September 10, 2023</time> by Ada Lovelace
+   </p>
+   <p>This is another blog post...</p>
+   <p>More content goes here...</p>
+   </article>
+</div>
 
-    </body>
+</main>
+
+<aside>
+   <section>
+       <h2>Recent Posts</h2>
+       <ul class='nav__recent'>
+           <li><a href="/posts/1.html">Post Title 1</a></li>
+           <li><a href="#">Post Title 2</a></li>
+           <li><a href="#">Post Title 3</a></li>
+       </ul>
+   </section>
+   
+   <section>
+       <h2>Categories</h2>
+       <ul class='nav__categories'>
+           <li><a href="#">Category 1</a></li>
+           <li><a href="#">Category 2</a></li>
+           <li><a href="#">Category 3</a></li>
+       </ul>
+   </section>
+</aside>
+</div>
+
+<footer>
+<p>&copy; 2023 My Blog. All rights reserved.</p>
+</footer>
+</body>
 </html>
